@@ -24,3 +24,59 @@
 }
 
 /** Continue aqui **/
+/* 2. Li com id #unico → texto vermelho */
+#unico {
+    color: red;
+
+}
+
+/* 3. Li com data-type="attr" → sublinhado */
+li[data-type="attr"] {
+    text-decoration: underline;
+}
+
+/* 4. Li com data-role~="user" → texto em itálico */
+li[data-role~="user"] {
+    font-style: italic;
+
+}
+
+/* (B) Aumentar o item que tem o texto “Este é o :first-child” (é o 5º da lista) */
+.content .demo > li:nth-child(5) {
+    font-size: 1.25rem;
+}
+
+.content .demo > li:nth-child(6) {
+    border: 2px solid blue;
+}
+
+/* 7. Li com classe .ativo → fundo cinza */
+li.ativo {
+    background-color: #ccc;
+}
+
+/* 8. Dentro do li, apenas o span deve ficar em negrito */
+li span {
+    font-weight: bold;
+}
+
+/* 9. Li com as duas classes .especial e .destaque → maiúsculas */
+li.especial.destaque {
+    text-transform: uppercase;
+}
+
+/* 10. Li com atributo lang="pt-br" → texto verde */
+li[lang="pt-br"] {
+    color: green;
+}
+
+/* 11. Atributo title que começa com "começa" → itálico */
+li[title^="começa"] {
+    font-style: italic;
+}
+
+/* 12. Atributo title que termina com "com" → fundo rosa */
+ul.demo li:last-child {
+    background-color: pink;
+}
+
